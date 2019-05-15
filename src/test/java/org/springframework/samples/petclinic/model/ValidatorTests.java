@@ -50,6 +50,8 @@ public class ValidatorTests {
         person.setLastName("smith");
 
         Validator validator = createValidator();
+        // test change
+        person = null;
         Set<ConstraintViolation<Person>> constraintViolations = validator
                 .validate(person);
 
